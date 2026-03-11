@@ -1,0 +1,43 @@
+{
+  "experiment": "F_diff_check",
+  "description": "D + diff-based minimal-edit audit",
+  "num_samples": 500,
+  "total_time": 5020.350502252579,
+  "avg_time_per_sample": 10.040701004505157,
+  "sentence_accuracy": 0.882,
+  "char_precision": 0.9349493242469236,
+  "char_recall": 0.9201641805141623,
+  "char_f1": 0.9215805659311226,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5833333333333334,
+      "char_f1": 0.7663368736266967
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.7581699346405228,
+      "char_f1": 0.8214508725759458
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.898989898989899,
+      "char_f1": 0.9610576338137685
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8725490196078431,
+      "char_f1": 0.913417964115801
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.8108108108108109,
+      "char_f1": 0.8859096042154714
+    }
+  },
+  "judge_validation_pass_rate": 0.952,
+  "selected_validation_pass_rate": 0.97,
+  "alternative_selection_rate": 0.018,
+  "validation_fallback_rate": 0.03,
+  "diff_pass_rate": 0.97
+}

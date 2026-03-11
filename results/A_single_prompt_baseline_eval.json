@@ -1,0 +1,5165 @@
+{
+  "aggregate": {
+    "sentence_accuracy": 0.85,
+    "char_precision": 0.9113957135179332,
+    "char_recall": 0.8963356050801616,
+    "char_f1": 0.893253408436809,
+    "total_samples": 500
+  },
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5138888888888888,
+      "char_f1": 0.6927643410459146
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.6928104575163399,
+      "char_f1": 0.7691313841380225
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8434343434343434,
+      "char_f1": 0.9151974413173471
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8627450980392157,
+      "char_f1": 0.9058340880957889
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.7027027027027027,
+      "char_f1": 0.8051684562477187
+    }
+  },
+  "by_num_errors": {
+    "0": {
+      "count": 59,
+      "sentence_accuracy": 1.0,
+      "char_f1": 1.0
+    },
+    "1": {
+      "count": 218,
+      "sentence_accuracy": 0.9357798165137615,
+      "char_f1": 0.9375521267723103
+    },
+    "2": {
+      "count": 142,
+      "sentence_accuracy": 0.795774647887324,
+      "char_f1": 0.8483043216448938
+    },
+    "3": {
+      "count": 81,
+      "sentence_accuracy": 0.6049382716049383,
+      "char_f1": 0.7750756408452567
+    }
+  },
+  "per_sample": [
+    {
+      "id": 0,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 1,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 2,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 3,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 4,
+      "sent_correct": false,
+      "precision": 0.05625,
+      "recall": 0.060810810810810814,
+      "f1": 0.05844155844155844,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 5,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 6,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 7,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 8,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 9,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 10,
+      "sent_correct": false,
+      "precision": 0.9928057553956835,
+      "recall": 0.9928057553956835,
+      "f1": 0.9928057553956835,
+      "error_types": [
+        "ocr_formula",
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 11,
+      "sent_correct": false,
+      "precision": 0.28888888888888886,
+      "recall": 0.3,
+      "f1": 0.2943396226415094,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 12,
+      "sent_correct": false,
+      "precision": 0.08374384236453201,
+      "recall": 0.0787037037037037,
+      "f1": 0.081145584725537,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 13,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 14,
+      "sent_correct": false,
+      "precision": 0.6666666666666666,
+      "recall": 0.017241379310344827,
+      "f1": 0.03361344537815126,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 15,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 16,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 17,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 18,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 19,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 20,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 21,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 22,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 23,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 24,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 25,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 26,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 27,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 28,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 29,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 30,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 31,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 32,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 33,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 34,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 35,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 36,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 37,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 38,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 39,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 40,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 41,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 42,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 43,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.02127659574468085,
+      "f1": 0.04166666666666667,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 44,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 45,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 46,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.14285714285714285,
+      "f1": 0.25,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 47,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 48,
+      "sent_correct": false,
+      "precision": 0.06944444444444445,
+      "recall": 0.047619047619047616,
+      "f1": 0.05649717514124294,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 49,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 50,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 51,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.4731182795698925,
+      "f1": 0.6423357664233577,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 52,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 53,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 54,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 55,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 56,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 57,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 58,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 59,
+      "sent_correct": false,
+      "precision": 0.0975609756097561,
+      "recall": 0.10256410256410256,
+      "f1": 0.1,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 60,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 61,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 62,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 63,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 64,
+      "sent_correct": false,
+      "precision": 0.0743801652892562,
+      "recall": 0.06338028169014084,
+      "f1": 0.06844106463878327,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 65,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 66,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 67,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 68,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 69,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 70,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 71,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 72,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 73,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 74,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 75,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 76,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 77,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 78,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 79,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 80,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 81,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 82,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 83,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 84,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 85,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 86,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 87,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 88,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 89,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 90,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 91,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 92,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 93,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 94,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 95,
+      "sent_correct": false,
+      "precision": 0.6041666666666666,
+      "recall": 1.0,
+      "f1": 0.7532467532467533,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 96,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 97,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 98,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 99,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 100,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 101,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.13333333333333333,
+      "f1": 0.23529411764705882,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 102,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 103,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 104,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 105,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 106,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 107,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 108,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 109,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 110,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 111,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 112,
+      "sent_correct": false,
+      "precision": 0.008403361344537815,
+      "recall": 1.0,
+      "f1": 0.016666666666666666,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 113,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 114,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 115,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 116,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 117,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 118,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 119,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 120,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 121,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 122,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 123,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 124,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 125,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 126,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 127,
+      "sent_correct": false,
+      "precision": 0.9904761904761905,
+      "recall": 0.9904761904761905,
+      "f1": 0.9904761904761905,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 128,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 129,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 130,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 131,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 132,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 133,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 134,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 135,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 136,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 137,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 138,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 139,
+      "sent_correct": false,
+      "precision": 0.993103448275862,
+      "recall": 0.993103448275862,
+      "f1": 0.993103448275862,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 140,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 141,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 142,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 143,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 144,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 145,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 146,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 147,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 148,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 149,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 150,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 151,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 152,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 153,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 154,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 155,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 156,
+      "sent_correct": false,
+      "precision": 0.06349206349206349,
+      "recall": 0.057971014492753624,
+      "f1": 0.0606060606060606,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 157,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 158,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 159,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 160,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 161,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 162,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 163,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 164,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 165,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 166,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 167,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 168,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 169,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 170,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 171,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 172,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 173,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 174,
+      "sent_correct": false,
+      "precision": 0.8674698795180723,
+      "recall": 0.8944099378881988,
+      "f1": 0.8807339449541285,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 175,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 176,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 177,
+      "sent_correct": false,
+      "precision": 0.15207373271889402,
+      "recall": 0.16417910447761194,
+      "f1": 0.15789473684210525,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 178,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 179,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 180,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 181,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 182,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 183,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 184,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 185,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 186,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 187,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 188,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 189,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 190,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.08333333333333333,
+      "f1": 0.15384615384615385,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 191,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 192,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 193,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 194,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 195,
+      "sent_correct": false,
+      "precision": 0.004484304932735426,
+      "recall": 0.3333333333333333,
+      "f1": 0.008849557522123894,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 196,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 197,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 198,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 199,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 200,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 201,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 202,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 203,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 204,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 205,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 206,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 207,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 208,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 209,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 210,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 211,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 212,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 213,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 214,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 215,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 216,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 217,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 218,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 219,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 220,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 221,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 222,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 223,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 224,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 225,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 226,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 227,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 228,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 229,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.011494252873563218,
+      "f1": 0.022727272727272724,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 230,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 231,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 232,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 233,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 234,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 235,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 236,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 237,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 238,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 239,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 240,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 241,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 242,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 243,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 244,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 245,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 246,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 247,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 248,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 249,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 250,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 251,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 252,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 253,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 254,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 255,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 256,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 257,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 258,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 259,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 260,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 261,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 262,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 263,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 264,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 265,
+      "sent_correct": false,
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1": 0.8888888888888888,
+      "error_types": [
+        "handwriting_confusion",
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 266,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 267,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 268,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 269,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 270,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 271,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 272,
+      "sent_correct": false,
+      "precision": 0.5,
+      "recall": 0.03225806451612903,
+      "f1": 0.06060606060606061,
+      "error_types": [
+        "handwriting_confusion",
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 273,
+      "sent_correct": false,
+      "precision": 0.8646616541353384,
+      "recall": 0.8646616541353384,
+      "f1": 0.8646616541353384,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 274,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 275,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 276,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 277,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 278,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 279,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 280,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 281,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 282,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 283,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 284,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 285,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 286,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 287,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 288,
+      "sent_correct": false,
+      "precision": 0.06060606060606061,
+      "recall": 0.05714285714285714,
+      "f1": 0.05882352941176471,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 289,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 290,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 291,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 292,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 293,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 294,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 295,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 296,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 297,
+      "sent_correct": false,
+      "precision": 0.05263157894736842,
+      "recall": 0.01282051282051282,
+      "f1": 0.020618556701030927,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 298,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 299,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 300,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 301,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.01098901098901099,
+      "f1": 0.02173913043478261,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 302,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 303,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 304,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 305,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 306,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 307,
+      "sent_correct": false,
+      "precision": 0.5088757396449705,
+      "recall": 0.9772727272727273,
+      "f1": 0.669260700389105,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 308,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 309,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 310,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 311,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 312,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 313,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 314,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 315,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 316,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 317,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 318,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 319,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 320,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 321,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 322,
+      "sent_correct": false,
+      "precision": 0.9793103448275862,
+      "recall": 0.9726027397260274,
+      "f1": 0.9759450171821304,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 323,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 324,
+      "sent_correct": false,
+      "precision": 0.03333333333333333,
+      "recall": 0.031496062992125984,
+      "f1": 0.032388663967611336,
+      "error_types": [
+        "ocr_formula",
+        "variable"
+      ]
+    },
+    {
+      "id": 325,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 326,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 327,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 328,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 329,
+      "sent_correct": false,
+      "precision": 0.03546099290780142,
+      "recall": 0.05952380952380952,
+      "f1": 0.044444444444444446,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 330,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 331,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 332,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 333,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 334,
+      "sent_correct": false,
+      "precision": 0.9854014598540146,
+      "recall": 0.9854014598540146,
+      "f1": 0.9854014598540146,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 335,
+      "sent_correct": false,
+      "precision": 0.17647058823529413,
+      "recall": 0.18,
+      "f1": 0.17821782178217824,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 336,
+      "sent_correct": false,
+      "precision": 0.035398230088495575,
+      "recall": 0.037383177570093455,
+      "f1": 0.036363636363636355,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 337,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 338,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 339,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 340,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 341,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 342,
+      "sent_correct": false,
+      "precision": 0.9791666666666666,
+      "recall": 0.9791666666666666,
+      "f1": 0.9791666666666666,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 343,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 344,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 345,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 346,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 347,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 348,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 349,
+      "sent_correct": false,
+      "precision": 0.03278688524590164,
+      "recall": 0.03225806451612903,
+      "f1": 0.03252032520325203,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 350,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 351,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 352,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 353,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 354,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 355,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 356,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 357,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 358,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 359,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 360,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 361,
+      "sent_correct": false,
+      "precision": 0.4931506849315068,
+      "recall": 0.5070422535211268,
+      "f1": 0.5,
+      "error_types": [
+        "ocr_formula",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 362,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 363,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 364,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 365,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 366,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 367,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 368,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 369,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 370,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 371,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 372,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 373,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 374,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 375,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 376,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 377,
+      "sent_correct": false,
+      "precision": 0.7711864406779662,
+      "recall": 0.8198198198198198,
+      "f1": 0.7947598253275109,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 378,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 379,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 380,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 381,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 382,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 383,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 384,
+      "sent_correct": false,
+      "precision": 0.2356020942408377,
+      "recall": 0.25280898876404495,
+      "f1": 0.24390243902439024,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 385,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 386,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 387,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 388,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 389,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 390,
+      "sent_correct": false,
+      "precision": 0.015267175572519083,
+      "recall": 0.6666666666666666,
+      "f1": 0.029850746268656712,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 391,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 392,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 393,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 394,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 395,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 396,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 397,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 398,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 399,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 400,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 401,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 402,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 403,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 404,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 405,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 406,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 407,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 408,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 409,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 410,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 411,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 412,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 413,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 414,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 415,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 416,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 417,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 418,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 419,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 420,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "variable"
+      ]
+    },
+    {
+      "id": 421,
+      "sent_correct": false,
+      "precision": 0.6666666666666666,
+      "recall": 0.029850746268656716,
+      "f1": 0.05714285714285715,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 422,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 423,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 424,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 425,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 426,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 427,
+      "sent_correct": false,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1": 0.3333333333333333,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 428,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 429,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 430,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 431,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 432,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 433,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 434,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 435,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 436,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 437,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 438,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 439,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 440,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 441,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.015151515151515152,
+      "f1": 0.02985074626865672,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 442,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 443,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 444,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 445,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 446,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 447,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 448,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 449,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 450,
+      "sent_correct": false,
+      "precision": 0.14285714285714285,
+      "recall": 0.037037037037037035,
+      "f1": 0.058823529411764705,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 451,
+      "sent_correct": false,
+      "precision": 0.38636363636363635,
+      "recall": 0.39766081871345027,
+      "f1": 0.3919308357348703,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 452,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "variable",
+        "spelling"
+      ]
+    },
+    {
+      "id": 453,
+      "sent_correct": false,
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1": 0.25,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 454,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 455,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 456,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 457,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 458,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 459,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 460,
+      "sent_correct": false,
+      "precision": 0.07913669064748201,
+      "recall": 0.0763888888888889,
+      "f1": 0.07773851590106007,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 461,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 462,
+      "sent_correct": false,
+      "precision": 0.9915254237288136,
+      "recall": 0.9915254237288136,
+      "f1": 0.9915254237288136,
+      "error_types": [
+        "ocr_formula",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 463,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 464,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 465,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 466,
+      "sent_correct": false,
+      "precision": 1.0,
+      "recall": 0.9846153846153847,
+      "f1": 0.9922480620155039,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 467,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 468,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 469,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 470,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 471,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 472,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 473,
+      "sent_correct": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 474,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 475,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 476,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 477,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 478,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "variable"
+      ]
+    },
+    {
+      "id": 479,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 480,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 481,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion"
+      ]
+    },
+    {
+      "id": 482,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling"
+      ]
+    },
+    {
+      "id": 483,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 484,
+      "sent_correct": false,
+      "precision": 0.9923664122137404,
+      "recall": 0.9923664122137404,
+      "f1": 0.9923664122137404,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 485,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 486,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 487,
+      "sent_correct": false,
+      "precision": 0.15873015873015872,
+      "recall": 0.15625,
+      "f1": 0.15748031496062992,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 488,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 489,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 490,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 491,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 492,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": []
+    },
+    {
+      "id": 493,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 494,
+      "sent_correct": false,
+      "precision": 0.9911504424778761,
+      "recall": 0.9911504424778761,
+      "f1": 0.9911504424778761,
+      "error_types": [
+        "ocr_formula",
+        "ocr_symbol",
+        "spelling"
+      ]
+    },
+    {
+      "id": 495,
+      "sent_correct": false,
+      "precision": 0.04411764705882353,
+      "recall": 0.03225806451612903,
+      "f1": 0.03726708074534161,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling",
+        "ocr_symbol"
+      ]
+    },
+    {
+      "id": 496,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "spelling"
+      ]
+    },
+    {
+      "id": 497,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "handwriting_confusion",
+        "ocr_formula"
+      ]
+    },
+    {
+      "id": 498,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "ocr_formula",
+        "spelling"
+      ]
+    },
+    {
+      "id": 499,
+      "sent_correct": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "error_types": [
+        "spelling",
+        "ocr_symbol"
+      ]
+    }
+  ]
+}

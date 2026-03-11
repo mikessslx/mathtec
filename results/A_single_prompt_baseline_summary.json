@@ -1,0 +1,38 @@
+{
+  "experiment": "A_single_prompt_baseline",
+  "description": "Single model, single prompt, no debate rounds",
+  "num_samples": 500,
+  "total_time": 1380.2574489116669,
+  "avg_time_per_sample": 2.7605148978233336,
+  "sentence_accuracy": 0.85,
+  "char_precision": 0.9113957135179332,
+  "char_recall": 0.8963356050801616,
+  "char_f1": 0.893253408436809,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5138888888888888,
+      "char_f1": 0.6927643410459146
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.6928104575163399,
+      "char_f1": 0.7691313841380225
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8434343434343434,
+      "char_f1": 0.9151974413173471
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8627450980392157,
+      "char_f1": 0.9058340880957889
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.7027027027027027,
+      "char_f1": 0.8051684562477187
+    }
+  }
+}

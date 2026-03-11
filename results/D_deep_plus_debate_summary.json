@@ -1,0 +1,38 @@
+{
+  "experiment": "D_deep_plus_debate",
+  "description": "DEEP detection + multi-agent debate",
+  "num_samples": 500,
+  "total_time": 4395.835111141205,
+  "avg_time_per_sample": 8.79167022228241,
+  "sentence_accuracy": 0.88,
+  "char_precision": 0.9320287018231269,
+  "char_recall": 0.9216105896517861,
+  "char_f1": 0.9198099008667211,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5972222222222222,
+      "char_f1": 0.7723551390730988
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.7712418300653595,
+      "char_f1": 0.8319440175313992
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8838383838383839,
+      "char_f1": 0.950037629087586
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8676470588235294,
+      "char_f1": 0.9099009314696072
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.8108108108108109,
+      "char_f1": 0.9089820272878945
+    }
+  }
+}

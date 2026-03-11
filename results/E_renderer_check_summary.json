@@ -1,0 +1,43 @@
+{
+  "experiment": "E_renderer_check",
+  "description": "D + MathJax renderer verification gate",
+  "num_samples": 500,
+  "total_time": 4397.26994395256,
+  "avg_time_per_sample": 8.79453988790512,
+  "sentence_accuracy": 0.882,
+  "char_precision": 0.9306070612595184,
+  "char_recall": 0.9221696628257178,
+  "char_f1": 0.9203386579464923,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.6111111111111112,
+      "char_f1": 0.780917032612919
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.7712418300653595,
+      "char_f1": 0.8300675347880715
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8787878787878788,
+      "char_f1": 0.9429885849630226
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8774509803921569,
+      "char_f1": 0.9177954022846119
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.7837837837837838,
+      "char_f1": 0.8604997291919678
+    }
+  },
+  "judge_validation_pass_rate": 1.0,
+  "selected_validation_pass_rate": 1.0,
+  "alternative_selection_rate": 0.0,
+  "validation_fallback_rate": 0.0,
+  "render_pass_rate": 1.0
+}

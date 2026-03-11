@@ -1,0 +1,38 @@
+{
+  "experiment": "B_deep_detection",
+  "description": "Single model, DEEP multi-prompt detection, no debate rounds",
+  "num_samples": 500,
+  "total_time": 2090.3018078804016,
+  "avg_time_per_sample": 4.180603615760803,
+  "sentence_accuracy": 0.874,
+  "char_precision": 0.9308459818445745,
+  "char_recall": 0.9161343649879042,
+  "char_f1": 0.9148558544910239,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5972222222222222,
+      "char_f1": 0.780053304458949
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.738562091503268,
+      "char_f1": 0.8040103318872676
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8686868686868687,
+      "char_f1": 0.9345440655834498
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8676470588235294,
+      "char_f1": 0.9172435863588092
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.7567567567567568,
+      "char_f1": 0.8565659748718419
+    }
+  }
+}
