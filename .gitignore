@@ -1,6 +1,25 @@
+# Python
 __pycache__/
+*.py[cod]
 .DS_Store
 
-node_modules
+# Virtual Environment
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Local-only LaTeX
 paper/
 presentation/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+config.yaml
+
+# Generated outputs
+logs/
+results/eval.json

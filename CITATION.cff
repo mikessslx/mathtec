@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or the MathTEC-Bench benchmark, please cite the dataset/code repository (this entry) and the paper below."
+title: "MathTEC: A Multi-Agent Framework for Mathematical Text Error Correction"
+abstract: >-
+  MathTEC is a three-stage pipeline for correcting errors in mathematical text that mixes prose with inline LaTeX. It combines six-prompt ensemble detection, multi-agent debate, and optional post-check gates (a diff auditor and a LaTeX render check). The repository also releases MathTEC-Bench, a synthetic benchmark of 500 English mathematical statements spanning five error types.
+authors:
+  - family-names: Li
+    given-names: Xiang
+    affiliation: "Guangdong Technion - Israel Institute of Technology (GTIIT), Shantou, China"
+type: software
+license: MIT
+repository-code: "https://github.com/mikessslx/mathtec"
+url: "https://github.com/mikessslx/mathtec"
+version: "1.0.0"
+date-released: "2026-10-20"
+keywords:
+  - mathematical text error correction
+  - OCR post-correction
+  - large language models
+  - multi-agent systems
+  - prompt ensembling
+  - benchmark
+preferred-citation:
+  type: conference-paper
+  title: "MathTEC: A Multi-Agent Framework for Mathematical Text Error Correction"
+  authors:
+    - family-names: Li
+      given-names: Xiang
+      affiliation: "Guangdong Technion - Israel Institute of Technology (GTIIT), Shantou, China"
+  conference:
+    name: "2026 11th International Conference on Computer and Communication Systems (ICCCS)"
+    location: Wuhan, China
+  publisher:
+    name: IEEE
+  year: 2026
+  start: 1154
+  end: 1159
+  doi: "10.1109/ICCCS69761.2026.11613421"

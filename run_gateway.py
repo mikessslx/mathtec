@@ -1,10 +1,13 @@
 """
 Quick-start script for gateway users.
 
-Usage:
-    1. Fill in GATEWAY_BASE_URL and GATEWAY_API_KEY below
-    2. Adjust model names if your gateway uses different names
-    3. Run: python run_gateway.py <command>
+Configure the endpoint through environment variables (never hard-code a key):
+
+    export GATEWAY_BASE_URL="https://your-endpoint.example.com/v1"
+    export GATEWAY_API_KEY="..."
+    export GATEWAY_MODEL="gpt-5.4"          # optional, defaults below
+
+Then run: python run_gateway.py <command>
 """
 import argparse
 import asyncio
@@ -13,22 +16,23 @@ import os
 from pathlib import Path
 
 
-# Set your gateway info here!!!
-
-GATEWAY_BASE_URL = "http://127.0.0.1:8317/v1"
-GATEWAY_API_KEY = "your-api-key-1"
+# Read gateway settings from the environment; the defaults match the setup used
+# for the reported experiments but are safe to override.
+GATEWAY_BASE_URL = os.environ.get("GATEWAY_BASE_URL", "http://127.0.0.1:8317/v1")
+GATEWAY_API_KEY = os.environ.get("GATEWAY_API_KEY", "your-api-key-1")
+_DEFAULT_MODEL = os.environ.get("GATEWAY_MODEL", "gpt-5.4")
 
 MODELS = {
-    "detector":       "gpt-5.4",
-    "agent_a":        "gpt-5.4",
-    "agent_b":        "gpt-5.4",
-    "agent_c":        "gpt-5.4",
-    "judge":          "gpt-5.4",
-    "data_generator": "gpt-5.4",
+    "detector":       _DEFAULT_MODEL,
+    "agent_a":        _DEFAULT_MODEL,
+    "agent_b":        _DEFAULT_MODEL,
+    "agent_c":        _DEFAULT_MODEL,
+    "judge":          _DEFAULT_MODEL,
+    "data_generator": _DEFAULT_MODEL,
 }
 
 
-if GATEWAY_API_KEY != "your-api-key":
+if GATEWAY_API_KEY:
     os.environ["GATEWAY_API_KEY"] = GATEWAY_API_KEY
 
 from config import (
@@ -174,7 +178,7 @@ async def interactive_chat(show_details: bool = False):
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Gateway entry point for MathTEC.",
-        epilog="Edit GATEWAY_BASE_URL and GATEWAY_API_KEY at the top of this file before running.",
+        epilog="Set GATEWAY_BASE_URL and GATEWAY_API_KEY in the environment before running.",
     )
     subparsers = parser.add_subparsers(dest="command")
 

@@ -1,176 +1,197 @@
 # MathTEC
 
-> A multi-agent framework for mathematical text error correction. It combines DEEP-style multi-prompt detection, multi-agent debate, diff auditing and renderer-based LaTeX validation. All data reported in this paper were from MathTEC.
+> A three-stage pipeline that corrects errors in mathematical text mixing prose with inline LaTeX, together with **MathTEC-Bench**, a synthetic benchmark of 500 English mathematical statements covering five error types.
 
-## What Is Included
+**Paper:** [MathTEC: A Multi-Agent Framework for Mathematical Text Error Correction](https://doi.org/10.1109/ICCCS69761.2026.11613421) — ICCCS 2026 (IEEE), pp. 1154–1159
 
-```
-mathtec/
-├── config.py                  # API keys, model configs, pipeline params
-├── pipeline.py                # Main 3-stage pipeline orchestration
-├── evaluate.py                # Metrics: char-F1, sentence accuracy, GLEU
-├── run_experiments.py         # Ablation experiment runner
-├── run_gateway.py             # Gateway-based quick-start entry point
-├── agents/
-│   ├── base.py                # Unified LLM client (OpenAI/Anthropic/DeepSeek)
-│   ├── detector.py            # Stage 1: DEEP-style multi-prompt detection
-│   ├── corrector.py           # Stage 2: Multi-agent debate correction
-│   └── judge.py               # Debate judge (selects best correction)
-├── validators/
-│   ├── diff_audit.py          # Diff-based minimal-edit audit
-│   └── render_check.py        # KaTeX/MathJax renderer verification
-├── tools/
-│   └── render_check.js        # Node helper for renderer checks
-├── data/
-│   ├── error_injector.py      # 5-type error injection (spelling/OCR/variable/handwriting)
-│   └── construct_benchmark.py # MathTEC-Bench builder
-├── paper/
-│   └── paper.tex              # ACL-format paper template
-└── results/                   # Experiment outputs
-```
+## Results
 
-## Setup
+Best configuration **G** (six-prompt detection + three-agent debate + diff audit + MathJax render gate) against the single-prompt single-agent baseline **A**:
 
-1. Install dependencies:
+| Config | Prec. | Rec. | F1 | Sent-Acc |
+|---|---|---|---|---|
+| A: Single prompt + single agent | 91.1 | 89.6 | 89.3 | 85.0 |
+| D: DEEP detection + debate | 93.2 | 92.2 | 92.0 | 88.0 |
+| **G: D + diff audit + MathJax** | **94.0** | **92.5** | **92.4** | **88.4** |
+
+Improvement from A to G: **+3.1 char-F1** and **+3.4 sentence-accuracy** points.
+
+Character-level F1 by error type (percentages):
+
+| Config | Spell. | OCR-Sym. | OCR-Form. | Variable | Handwrite |
+|---|---|---|---|---|---|
+| A | 91.5 | 76.9 | 69.3 | 80.5 | 90.6 |
+| D | 95.0 | 83.2 | 77.2 | 90.9 | 91.0 |
+| G | 94.1 | 83.4 | 77.4 | 90.9 | 92.0 |
+
+Every number above is reproduced by a command in [Reproducing the results](#reproducing-the-results) — **offline, with no API key**.
+
+## Quick start
+
+Verify the headline numbers in seconds — **no API key, no model download, no GPU, and no `pip install` beyond numpy**, because the released per-sample outputs and the evaluator both run offline:
 
 ```bash
+git clone https://github.com/mikessslx/mathtec.git && cd mathtec
+pip install numpy # all the offline path needs
+python reproduce_tables.py
+```
+
+This prints Table 1 (benchmark statistics), Table 2 (main results) and Table 3 (F1 by error type).
+
+## Installation
+
+Tested with Python 3.11, 3.12 and 3.14; the reported experiments used 3.14. No GPU is required — all inference goes through LLM APIs. Node.js is needed only for the MathJax render check.
+
+```bash
+git clone https://github.com/mikessslx/mathtec.git && cd mathtec
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-npm install
+npm install # optional: only for the MathJax/KaTeX render gate (E and G)
 ```
 
-2. Set API keys:
+## Reproducing the results
+
+### Without an API key (seconds)
+
+The repository ships the per-sample outputs for all seven configurations, so the paper's tables are rebuilt offline directly from those files:
 
 ```bash
-export OPENAI_API_KEY="sk-..."
-export ANTHROPIC_API_KEY="sk-ant-..."
-export DEEPSEEK_API_KEY="sk-..."
+python reproduce_tables.py
 ```
 
-## Quick Start
+| Paper element | Command | Runtime | Hardware |
+|---|---|---|---|
+| Table 1 — benchmark statistics | `python reproduce_tables.py` | <1 s | CPU |
+| Table 2 — main ablation results | `python reproduce_tables.py` | <1 s | CPU |
+| Table 3 — F1 by error type | `python reproduce_tables.py` | <1 s | CPU |
 
-Choose one of the following workflows.
-
-### Option A: Gateway Workflow
-
-> The workflow was used in this paper.
-
-1. Edit `GATEWAY_BASE_URL`, `GATEWAY_API_KEY` and `MODELS` at the top of `run_gateway.py`.
-
-2. Run a quick test:
+You can also re-run the evaluation script on any shipped result file directly:
 
 ```bash
-python run_gateway.py test
+python evaluate.py data/mathtec_bench.json results/G_diff_plus_renderer_results.json
 ```
 
-3. Build the benchmark:
+### Re-running the experiments (requires API access)
+
+This regenerates the per-sample outputs from scratch and **costs real API credit**. The reported run took about 7.4 hours of wall-clock time for all seven configurations (single-precision totals: 442 minutes, ~63 minutes per configuration at 3 concurrent requests).
 
 ```bash
-python run_gateway.py benchmark
+export GATEWAY_BASE_URL="https://your-endpoint.example.com/v1"
+export GATEWAY_API_KEY="..."
+python run_gateway.py experiments # all seven configurations -> results/
 ```
 
-4. Run the experiments:
+To run one configuration, or a quick subset:
 
 ```bash
-python run_gateway.py experiments
+python run_experiments.py --experiment G
+python run_experiments.py --max-samples 20
 ```
 
-### Option B: Direct Scripts
+> **Note on models.** The paper's results were produced with `run_gateway.py`, which
+> routes every role (detector, three debate agents, judge) to a single model — the
+> default is `gpt-5.4` for all of them, as configured in `MODELS` at the top of
+> `run_gateway.py`. The separate `DEFAULT_MODELS` table in `config.py` instead mixes
+> providers (`claude-sonnet-4.6` for `agent_b`, `deepseek-v3.2` for `agent_c`);
+> `run_experiments.py` uses that mixed table when run standalone. Reproducing the
+> paper's numbers therefore requires the gateway path, or setting the environment
+> variables `GATEWAY_MODEL` accordingly. The backbone model is not recorded inside
+> the shipped `results/*.json` files.
 
-1. Build the benchmark:
+## Data
 
-```bash
-python -m data.construct_benchmark
-```
+`data/mathtec_bench.json` is the released benchmark: 500 samples, 745 injected errors, 59 clean samples (no injected error, used to measure over-correction).
 
-This generates `data/mathtec_bench.json` with roughly 500 samples across 10 math topics and 5 error types.
+Statistics reproduced by `python reproduce_tables.py`:
 
-2. Run the full pipeline on a single text:
+| Statistic | Value |
+|---|---|
+| Total samples | 500 |
+| Clean samples | 59 (11.8%) |
+| Injected errors | 745 (1.49 per sample) |
+| Average words per sample | 24.2 |
+| Average inline math expressions per sample | 3.85 |
+| Injected error occurrences | spelling 221, OCR-symbol 175, OCR-formula 77, variable 38, handwriting 234 |
+| Samples with 1 / 2 / 3 injected errors | 218 / 142 / 81 |
+
+Each sample has the fields `id`, `original` (clean reference), `corrupted` (noisy input), `errors` (list of injected edits with type, spans and offsets), `num_errors` and `error_types`.
+
+**Source of the text.** The clean statements were generated with GPT-5.4 and then corrupted by the rule-based `data/error_injector.py`. They are therefore synthetic, not scraped from textbooks or exam banks; see `data/construct_benchmark.py` for the generation and injection procedure.
+
+**Two properties of the released data worth knowing:**
+
+- **No topic labels.** The samples are drawn from 10 topics, but the released JSON does not record a per-sample topic field. The count of 10 is available only in `config.BenchmarkConfig.math_topics`. The paper notes this limitation.
+- **Realised error mix differs from the nominal weights.** The generator requests spelling 0.25, OCR-symbol 0.25, OCR-formula 0.20, variable 0.05 and handwriting 0.25, but injection is rejected when no valid site exists in a given sentence and is not retried. Measured success rates per type are roughly spelling 97%, OCR-symbol 72%, OCR-formula 41%, variable 72% and handwriting 100%, which is why OCR-formula ends up at 10.3% of the 745 realised errors rather than 20%.
+
+The benchmark is synthetic and released under CC BY 4.0 (see [License](#license)). It contains no personal data.
+
+**Companion repository.** The QLoRA fine-tuning study that trains on this benchmark — and ships the same data as `source`/`target` train/val/test splits — is [mikessslx/mathcorrector](https://github.com/mikessslx/mathcorrector).
+
+## Correct one sentence
+
+Requires API access:
 
 ```python
 import asyncio
 from pipeline import MathTECPipeline
 
 pipeline = MathTECPipeline()
-
 text = "For all $x \\in \\mabb{R}$, the funciton $f(x) = x^{2}$ is continuos."
 result = asyncio.run(pipeline.process(text))
 print(result.corrected_text)
-# -> For all $x \in \mathbb{R}$, the function $f(x) = x^{2}$ is continuous.
 ```
 
-3. Run experiments:
+## Repository structure
 
-```bash
-python run_experiments.py --benchmark data/mathtec_bench.json --output-dir results
-
-# Quick test with 20 samples:
-python run_experiments.py --max-samples 20
+```text
+config.py              model configs, pipeline parameters, benchmark config
+pipeline.py            three-stage orchestration
+evaluate.py            char-level P/R/F1 and sentence accuracy
+reproduce_tables.py    rebuild the paper's tables offline (no API key)
+run_experiments.py     seven-configuration ablation runner
+run_gateway.py         gateway entry point (the path used for the paper)
+agents/                unified LLM client, detector, corrector, judge
+validators/            diff audit, MathJax/KaTeX render check
+tools/render_check.js  Node helper invoked by the render check
+data/                  benchmark builder, error injector, released benchmark
+results/               shipped per-sample outputs and summaries for A–G
 ```
 
-For a single configuration:
+## The seven configurations
 
-```bash
-python run_experiments.py --experiment E  # D + renderer check
-python run_experiments.py --experiment F  # D + diff audit
-python run_experiments.py --experiment G  # D + diff + renderer
-python run_experiments.py --experiment A  # baseline
+| Config | Detection | Debate | Post-check |
+|---|---|---|---|
+| A | 1 prompt | — | — |
+| B | 6 prompts (DEEP) | — | — |
+| C | 1 prompt | 3 agents, 2 rounds | — |
+| D | 6 prompts | 3 agents, 2 rounds | — |
+| E | 6 prompts | 3 agents, 2 rounds | MathJax render gate |
+| F | 6 prompts | 3 agents, 2 rounds | diff audit |
+| G | 6 prompts | 3 agents, 2 rounds | diff audit + MathJax |
+
+## Citation
+
+```bibtex
+@inproceedings{li2026mathtec,
+  title     = {{MathTEC}: A Multi-Agent Framework for Mathematical Text Error Correction},
+  author    = {Li, Xiang},
+  booktitle = {2026 11th International Conference on Computer and Communication Systems (ICCCS)},
+  pages     = {1154--1159},
+  year      = {2026},
+  publisher = {IEEE},
+  doi       = {10.1109/ICCCS69761.2026.11613421}
+}
 ```
 
-4. Evaluate results:
+GitHub also renders this from [`CITATION.cff`](CITATION.cff).
 
-```bash
-python evaluate.py data/mathtec_bench.json results/G_diff_plus_renderer_results.json results/eval.json
-```
+## License
 
+- **Code** in this repository is released under the [MIT License](LICENSE). Copyright 2025-2026 Xiang Li.
+- **MathTEC-Bench** (`data/mathtec_bench.json`) is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-## Experiments
+The paper itself is published by IEEE and is **not** redistributed here; please use the DOI link above.
 
-| Config | Detection | Debate | Post-check | Description |
-|--------|-----------|--------|------------|-------------|
-| A | 1 prompt | None | None | Single-model baseline |
-| B | 6 prompts (DEEP) | None | None | Multi-prompt detection only |
-| C | 1 prompt | 3 agents, 2 rounds | None | Multi-agent debate only |
-| D | 6 prompts | 3 agents, 2 rounds | None | DEEP + debate baseline |
-| E | 6 prompts | 3 agents, 2 rounds | MathJax render gate | D + renderer validation |
-| F | 6 prompts | 3 agents, 2 rounds | Diff audit | D + minimal-edit diff validation |
-| G | 6 prompts | 3 agents, 2 rounds | Diff audit + MathJax | Combined validation stack |
+## Acknowledgements
 
-## Configuration
-
-Create `config.yaml` to override defaults:
-
-```yaml
-models:
-  detector:
-    provider: openai
-    model: gpt-5.4
-    api_key_env: OPENAI_API_KEY
-    temperature: 0.2
-  agent_a:
-    provider: openai
-    model: gpt-5.4
-    api_key_env: OPENAI_API_KEY
-  agent_b:
-    provider: anthropic
-    model: claude-sonnet-4.6
-    api_key_env: ANTHROPIC_API_KEY
-
-pipeline:
-  detection:
-    num_prompts: 6
-    agreement_threshold: 2
-  debate:
-    num_rounds: 2
-    num_agents: 3
-  render_check:
-    enabled: true
-    backend: mathjax
-  diff_audit:
-    enabled: true
-    use_llm_review: true
-```
-
-## Notes
-
-- Renderer validation tools require `npm install`.
-- All data reported in this paper were generated primarily with `run_gateway.py`.
+The author thanks Prof. Antti Rasila for guidance and support throughout this research.
