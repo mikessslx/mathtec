@@ -1,0 +1,38 @@
+{
+  "experiment": "C_multi_agent_debate",
+  "description": "Multi-agent debate (3 models), single detection prompt",
+  "num_samples": 500,
+  "total_time": 4077.4768331050873,
+  "avg_time_per_sample": 8.154953666210174,
+  "sentence_accuracy": 0.874,
+  "char_precision": 0.9217283308567219,
+  "char_recall": 0.9145634333603708,
+  "char_f1": 0.9114560420090612,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5694444444444444,
+      "char_f1": 0.7409975264822193
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.7647058823529411,
+      "char_f1": 0.8242361153950547
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8888888888888888,
+      "char_f1": 0.9473066522244173
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8676470588235294,
+      "char_f1": 0.9113371902292704
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.7297297297297297,
+      "char_f1": 0.796487603726261
+    }
+  }
+}

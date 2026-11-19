@@ -1,0 +1,11 @@
+{
+  "name": "mathtec-render-checks",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Renderer validation helpers for MathTEC experiments",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "katex": "^0.16.11",
+    "mathjax-full": "^3.2.2"
+  }
+}

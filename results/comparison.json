@@ -1,0 +1,284 @@
+[
+  {
+    "experiment": "A_single_prompt_baseline",
+    "description": "Single model, single prompt, no debate rounds",
+    "num_samples": 500,
+    "total_time": 1380.2574489116669,
+    "avg_time_per_sample": 2.7605148978233336,
+    "sentence_accuracy": 0.85,
+    "char_precision": 0.9113957135179332,
+    "char_recall": 0.8963356050801616,
+    "char_f1": 0.893253408436809,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5138888888888888,
+        "char_f1": 0.6927643410459146
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.6928104575163399,
+        "char_f1": 0.7691313841380225
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8434343434343434,
+        "char_f1": 0.9151974413173471
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8627450980392157,
+        "char_f1": 0.9058340880957889
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.7027027027027027,
+        "char_f1": 0.8051684562477187
+      }
+    }
+  },
+  {
+    "experiment": "B_deep_detection",
+    "description": "Single model, DEEP multi-prompt detection, no debate rounds",
+    "num_samples": 500,
+    "total_time": 2090.3018078804016,
+    "avg_time_per_sample": 4.180603615760803,
+    "sentence_accuracy": 0.874,
+    "char_precision": 0.9308459818445745,
+    "char_recall": 0.9161343649879042,
+    "char_f1": 0.9148558544910239,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5972222222222222,
+        "char_f1": 0.780053304458949
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.738562091503268,
+        "char_f1": 0.8040103318872676
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8686868686868687,
+        "char_f1": 0.9345440655834498
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8676470588235294,
+        "char_f1": 0.9172435863588092
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.7567567567567568,
+        "char_f1": 0.8565659748718419
+      }
+    }
+  },
+  {
+    "experiment": "C_multi_agent_debate",
+    "description": "Multi-agent debate (3 models), single detection prompt",
+    "num_samples": 500,
+    "total_time": 4077.4768331050873,
+    "avg_time_per_sample": 8.154953666210174,
+    "sentence_accuracy": 0.874,
+    "char_precision": 0.9217283308567219,
+    "char_recall": 0.9145634333603708,
+    "char_f1": 0.9114560420090612,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5694444444444444,
+        "char_f1": 0.7409975264822193
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.7647058823529411,
+        "char_f1": 0.8242361153950547
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8888888888888888,
+        "char_f1": 0.9473066522244173
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8676470588235294,
+        "char_f1": 0.9113371902292704
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.7297297297297297,
+        "char_f1": 0.796487603726261
+      }
+    }
+  },
+  {
+    "experiment": "D_deep_plus_debate",
+    "description": "DEEP detection + multi-agent debate",
+    "num_samples": 500,
+    "total_time": 4395.835111141205,
+    "avg_time_per_sample": 8.79167022228241,
+    "sentence_accuracy": 0.88,
+    "char_precision": 0.9320287018231269,
+    "char_recall": 0.9216105896517861,
+    "char_f1": 0.9198099008667211,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5972222222222222,
+        "char_f1": 0.7723551390730988
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.7712418300653595,
+        "char_f1": 0.8319440175313992
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8838383838383839,
+        "char_f1": 0.950037629087586
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8676470588235294,
+        "char_f1": 0.9099009314696072
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.8108108108108109,
+        "char_f1": 0.9089820272878945
+      }
+    }
+  },
+  {
+    "experiment": "E_renderer_check",
+    "description": "D + MathJax renderer verification gate",
+    "num_samples": 500,
+    "total_time": 4397.26994395256,
+    "avg_time_per_sample": 8.79453988790512,
+    "sentence_accuracy": 0.882,
+    "char_precision": 0.9306070612595184,
+    "char_recall": 0.9221696628257178,
+    "char_f1": 0.9203386579464923,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.6111111111111112,
+        "char_f1": 0.780917032612919
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.7712418300653595,
+        "char_f1": 0.8300675347880715
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8787878787878788,
+        "char_f1": 0.9429885849630226
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8774509803921569,
+        "char_f1": 0.9177954022846119
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.7837837837837838,
+        "char_f1": 0.8604997291919678
+      }
+    },
+    "judge_validation_pass_rate": 1.0,
+    "selected_validation_pass_rate": 1.0,
+    "alternative_selection_rate": 0.0,
+    "validation_fallback_rate": 0.0,
+    "render_pass_rate": 1.0
+  },
+  {
+    "experiment": "F_diff_check",
+    "description": "D + diff-based minimal-edit audit",
+    "num_samples": 500,
+    "total_time": 5020.350502252579,
+    "avg_time_per_sample": 10.040701004505157,
+    "sentence_accuracy": 0.882,
+    "char_precision": 0.9349493242469236,
+    "char_recall": 0.9201641805141623,
+    "char_f1": 0.9215805659311226,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5833333333333334,
+        "char_f1": 0.7663368736266967
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.7581699346405228,
+        "char_f1": 0.8214508725759458
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.898989898989899,
+        "char_f1": 0.9610576338137685
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8725490196078431,
+        "char_f1": 0.913417964115801
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.8108108108108109,
+        "char_f1": 0.8859096042154714
+      }
+    },
+    "judge_validation_pass_rate": 0.952,
+    "selected_validation_pass_rate": 0.97,
+    "alternative_selection_rate": 0.018,
+    "validation_fallback_rate": 0.03,
+    "diff_pass_rate": 0.97
+  },
+  {
+    "experiment": "G_diff_plus_renderer",
+    "description": "D + diff audit + MathJax renderer verification gate",
+    "num_samples": 500,
+    "total_time": 5158.801542043686,
+    "avg_time_per_sample": 10.317603084087372,
+    "sentence_accuracy": 0.884,
+    "char_precision": 0.9395631920982871,
+    "char_recall": 0.9254554963214082,
+    "char_f1": 0.9244448825453365,
+    "by_error_type": {
+      "ocr_formula": {
+        "count": 72,
+        "sentence_accuracy": 0.5972222222222222,
+        "char_f1": 0.774227218417494
+      },
+      "ocr_symbol": {
+        "count": 153,
+        "sentence_accuracy": 0.7647058823529411,
+        "char_f1": 0.8335751829870763
+      },
+      "spelling": {
+        "count": 198,
+        "sentence_accuracy": 0.8787878787878788,
+        "char_f1": 0.9410184241221802
+      },
+      "handwriting_confusion": {
+        "count": 204,
+        "sentence_accuracy": 0.8774509803921569,
+        "char_f1": 0.9203453574146034
+      },
+      "variable": {
+        "count": 37,
+        "sentence_accuracy": 0.8108108108108109,
+        "char_f1": 0.9090582589430732
+      }
+    },
+    "judge_validation_pass_rate": 0.96,
+    "selected_validation_pass_rate": 0.97,
+    "alternative_selection_rate": 0.01,
+    "validation_fallback_rate": 0.03,
+    "diff_pass_rate": 0.97,
+    "render_pass_rate": 1.0
+  }
+]

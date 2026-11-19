@@ -1,0 +1,7 @@
+# Core
+openai>=1.12.0
+anthropic>=0.18.0
+pyyaml>=6.0
+
+# Evaluation
+numpy>=1.24.0

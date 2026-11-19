@@ -1,0 +1,44 @@
+{
+  "experiment": "G_diff_plus_renderer",
+  "description": "D + diff audit + MathJax renderer verification gate",
+  "num_samples": 500,
+  "total_time": 5158.801542043686,
+  "avg_time_per_sample": 10.317603084087372,
+  "sentence_accuracy": 0.884,
+  "char_precision": 0.9395631920982871,
+  "char_recall": 0.9254554963214082,
+  "char_f1": 0.9244448825453365,
+  "by_error_type": {
+    "ocr_formula": {
+      "count": 72,
+      "sentence_accuracy": 0.5972222222222222,
+      "char_f1": 0.774227218417494
+    },
+    "ocr_symbol": {
+      "count": 153,
+      "sentence_accuracy": 0.7647058823529411,
+      "char_f1": 0.8335751829870763
+    },
+    "spelling": {
+      "count": 198,
+      "sentence_accuracy": 0.8787878787878788,
+      "char_f1": 0.9410184241221802
+    },
+    "handwriting_confusion": {
+      "count": 204,
+      "sentence_accuracy": 0.8774509803921569,
+      "char_f1": 0.9203453574146034
+    },
+    "variable": {
+      "count": 37,
+      "sentence_accuracy": 0.8108108108108109,
+      "char_f1": 0.9090582589430732
+    }
+  },
+  "judge_validation_pass_rate": 0.96,
+  "selected_validation_pass_rate": 0.97,
+  "alternative_selection_rate": 0.01,
+  "validation_fallback_rate": 0.03,
+  "diff_pass_rate": 0.97,
+  "render_pass_rate": 1.0
+}
